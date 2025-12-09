@@ -10,7 +10,7 @@ app = FastAPI(title="NPS Info API")
 # ---------------- CORS --------------
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  
+    allow_origins=["https://nps-explorer-url.streamlit.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
